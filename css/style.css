@@ -1,0 +1,157 @@
+@font-face{
+    font-family: 'badbunny';
+    src: url('../FONT/againts.otf');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+.card-title{
+    font-family: 'badbunny';
+}
+
+.promo{
+    background: black;
+    color: white;
+    text-align: center;
+}
+.promo .moscow{
+    color: white;
+    text-decoration: none;
+    font-style: oblique;
+}
+
+.promo .moscow:hover{
+    color: crimson;
+    text-decoration: none;
+}
+
+.bienvenidos{
+    border: solid 1px black;
+    text-align: center;
+    margin: 5px 0px 5px 0px
+}
+
+.bienvenidos{ 
+    font-family: 'badbunny';
+}
+/* MENU DE NAVEGACION */
+
+.nav-link{
+    color: black;
+} 
+
+.nav-link:hover {
+    font-weight:lighter;
+    font-size: 19px;
+}
+
+/* CARDS */
+
+.destacados1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* ALBUMES */
+
+.spotify{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+
+/* BIO */
+.fichatecnica{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+
+/* FOOTER */
+.pie-pagina{
+    width: 100%;
+    background-color: #e91e63;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 125px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color:#9e9e9e ;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+
+
+.accordion {
+    padding-top: 20px;
+    margin: 0px 100px;
+    padding-bottom: 21px;
+}
+
+/* MEDIA QUERYS */
+
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+
+@media (max-width: 710px) {
+    .destacados1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
